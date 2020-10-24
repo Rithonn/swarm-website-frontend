@@ -16,6 +16,7 @@ RUN npm install react-scripts@3.4.1 -g --silent
 # add app
 COPY . ./
 
+# Copies build folder to build volume
 COPY /build /build_folder
 
 # start app
