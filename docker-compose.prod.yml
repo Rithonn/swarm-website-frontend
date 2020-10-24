@@ -4,7 +4,7 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.prod
     volumes:
       - build_folder:/build_folder
 
