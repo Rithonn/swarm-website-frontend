@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - build_folder:/build_folder
+
+volumes:
+  build_folder:
