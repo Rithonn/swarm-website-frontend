@@ -13,7 +13,7 @@ const background = backgroundImageStyling();
 interface LoginProps extends RouteComponentProps<{}>{}
 
 
-function IncorrectLogin(props: { failedLogin: any; }){
+function IncorrectLogin(props: { failedLogin: boolean; }){
     const isLoggedIn = props.failedLogin;
     if(isLoggedIn){
         return <p id={'incorrectLogin'}>Incorrect Username or Password</p>

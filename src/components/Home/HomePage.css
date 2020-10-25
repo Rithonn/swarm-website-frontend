@@ -1,0 +1,68 @@
+/*This is used for slide in animations*/
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.fontLarge{
+    font-size: 120px;
+    font-weight: bolder;
+}
+
+.fontMedium{
+    font-size: 60px;
+}
+
+#missionStatement{
+    animation: .75s ease-out 0s 1 slideInFromLeft;
+    color: white;
+    width: 50%;
+    margin-left: 15.0rem;
+    /*background-color: rgba(18%, 18%, 18%, .90);*/
+    margin-top: 10%;
+    border-radius: 20px;
+    padding: 15px 50px;
+
+}
+#missionStatement:hover{
+}
+
+#missionStatementButton{
+    margin-top: 1.2rem;
+}
+
+#visualizationRedirectButton{
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: white;
+    border-width: medium;
+    font-size: 30px;
+    width: 250px;
+    height: 70px;
+}
+
+#visualizationRedirectButton:hover{
+    background-color: #1c7430;
+    border-color: #1c7430;
+}
+
+@media (max-width:1470px) {
+    .fontLarge{
+        font-size: 60px;
+    }
+    .fontMedium{
+        font-size: 30px;
+    }
+    #visualizationRedirectButton{
+        font-size: 15px;
+        width: 150px;
+        height: 45px;
+    }
+    #missionStatement{
+        margin-left: initial;
+    }
+}

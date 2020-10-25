@@ -5,8 +5,6 @@ const companyLogo = require('../../../images/bd.svg');
 const instagramLogo = require('../../../images/socialMediaIcons/Instagram_Glyph_White-2.svg');
 const twitterLogo = require('../../../images/socialMediaIcons/Twitter_Social_Icon_Rounded_Square_White.svg');
 
-const swarmLogo = require('../../../images/swarmLogoIcon.png');
-
 /*
     The Sponsor will be passed in as the prop as it provides basic info including id which
     can be used to query the rest of the info needed for the page

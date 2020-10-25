@@ -1,3 +1,5 @@
+import {url} from '../../utils/DetermineUrl'
+
 export interface LoginState{
     redirect: boolean,
     failedLogin: boolean,
@@ -12,7 +14,7 @@ interface LoginData{
 
 export async function verifyUser(username: string, password: string){
     const response = await fetch(
-        "http://localhost:8000/user/verify_password?username=" +
+        url + "/user/verify_password?username=" +
         username + "&password=" + password, {
         method: 'GET',
         headers: {
